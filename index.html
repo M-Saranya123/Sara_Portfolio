@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saranya M | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f0fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #9d50bb, #6e48aa);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.4rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+
+    nav {
+      margin-top: 1.2rem;
+    }
+
+    nav a {
+      color: #fbeaff;
+      margin: 0 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    section {
+      padding: 3rem 10%;
+    }
+
+    section:nth-child(odd) {
+      background: #fff;
+    }
+
+    section:nth-child(even) {
+      background: #f0eaff;
+    }
+
+    h2 {
+      color: #5b2c6f;
+      font-size: 2rem;
+      border-bottom: 2px solid #dcd6f7;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .two-col {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card, .project, .skill {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 18px rgba(123, 104, 238, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-left: 5px solid #a66dd4;
+    }
+
+    .card:hover, .project:hover, .skill:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(123, 104, 238, 0.25);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.7rem;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 0.7rem 1rem 0 0;
+      color: #3b3b98;
+      font-weight: 500;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: #9c27b0;
+    }
+
+    .contact i {
+      margin-right: 6px;
+    }
+
+    footer {
+      background: linear-gradient(to right, #6e48aa, #9d50bb);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="profile.jpg" alt="Saranya M">
+    <h1>Saranya M</h1>
+    <p>Computer Science Undergraduate | Web Developer | SQL Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Hi, I'm Saranya, a Computer Science student at National Engineering College (CGPA: 8.55). Passionate about building real-world web applications and solving database problems.</p>
+      <ul>
+        <li><strong>Degree:</strong> B.E. Computer Science (2022–2026)</li>
+        <li><strong>Email:</strong> saramurugan2108@gmail.com</li>
+        <li><strong>Phone:</strong> 9976894499</li>
+        <li><strong>Location:</strong> Kovilpatti, Tamil Nadu</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid two-col">
+      <div class="project">
+        <h3>PlaceGenie – Placement Automation</h3>
+        <p>A MERN stack application that automates campus placements by enabling profile creation, company posting, and automatic resume generation.</p>
+      </div>
+      <div class="project">
+        <h3>Tutor Management System</h3>
+        <p>A full-featured web system allowing smooth interaction between students, mentors, and admins. Includes academic tracking and personalized support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid two-col">
+      <div class="skill"><strong>Java:</strong> Core concepts, OOPs, JDBC</div>
+      <div class="skill"><strong>HTML & CSS:</strong> Responsive Design, Flexbox</div>
+      <div class="skill"><strong>SQL:</strong> Queries, Joins, Procedures</div>
+      <div class="skill"><strong>MongoDB:</strong> CRUD, Schema Design</div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="grid two-col">
+      <div class="card">Scalar - SQL</div>
+      <div class="card">Infosys Springboard - HTML</div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements & Leadership</h2>
+    <ul>
+      <li>🏆 2nd Prize in Oracle SQL Competition</li>
+      <li>🏆 2nd Prize in SQL Treasure Hunt</li>
+      <li>💡 CSI Club Member & Event Coordinator – “Race and Code”</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach out to me via:</p>
+    <div class="contact">
+      <a href="mailto:saramurugan2108@gmail.com"><i class='bx bx-mail-send'></i>Email</a>
+      <a href="https://www.linkedin.com/in/saranya-m-669b24292" target="_blank"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+      <a href="https://github.com/M-Saranya123" target="_blank"><i class='bx bxl-github'></i>GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Saranya M. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
